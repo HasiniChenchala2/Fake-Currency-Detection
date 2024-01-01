@@ -1,0 +1,14 @@
+EarlyStopping is called once an epoch finishes. It checks whether the metric you configured it for has improved with respect to the best value found so far. If it has not improved, it increases the count of 'times not improved since best value' by one. If it did actually improve, it resets this count. By configuring your patience (i.e. the number of epochs without improvement you allow before training should be aborted), you have the freedom to decide when to stop training. This allows you to configure a very large number of epochs in model.fit (e.g. 100.000), while you know that it will abort the training process once it no longer improves. Gone is your waste of resources with respect to training for too long.
+It would be nice if you could save the best-performing model automatically. ModelCheckpoint is perfect for this and is also called after every epoch. Depending on how you configure it, it saves the entire model or its weights to an HDF5 file. If you wish, it can only save the model once it has improved with respect to some metric you can configure. You will then end up with the best performing instance of your model saved to file, ready for loading and production usage.
+Dense Layers:
+    Dense layers are used when an association can exist among any feature to any other feature in data point. Since between two layers of size n1 and n2, there can n1∗n2 connections and these are referred to as Dense.
+
+Flatten layers are used when you got a multidimensional output and you want to make it linear to pass it onto a Dense layer.
+Dropout is a way of cutting too much association among features by dropping the weights (edges) at a probability.
+
+How is CNN better than ML:
+    CNN best quality is that it automatically detects the important features from data without any human intervention
+
+Existing:
+   image processing techniques are used: image acquisition, image conversion ( convert to greyscale), feature extraction, image segmentation.
+safety features are watermarks, hidden images, security threads, optically variable inks
